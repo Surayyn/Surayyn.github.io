@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>index</title>
+<title>about</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: index;
-		--web-view-id: index;
+		--web-view-name: about;
+		--web-view-id: about;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: index;
+		--web-view-ids: about;
 	}
 	* {
 		margin: 0;
@@ -21,14 +21,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#index {
+	#about {
 		position: absolute;
 		width: 1280px;
 		height: 800px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: index;
-		--web-view-id: index;
+		--web-view-name: about;
+		--web-view-id: about;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -36,51 +36,23 @@
 	
 	
 	}
-	#Group_10 {
-		position: absolute;
-		width: 800px;
-		height: 210px;
-		left: 240.5px;
-		top: 30px;
-		overflow: visible;
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
 	}
 	#ID20200413_DUNES_Final_Logo_01 {
 		position: absolute;
 		width: 583px;
 		height: 129px;
-		left: 108px;
-		top: 0px;
+		left: 348.5px;
+		top: 30px;
 		overflow: visible;
-	}
-	#DYNAMIC_URBAN_NODES_EMOTION_SI {
-		position: absolute;
-		left: 0px;
-		top: 149px;
-		overflow: visible;
-		width: 801px;
-		height: 28px;
-		text-align: center;
-		font-family: Nexa;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 22px;
-		color: rgba(182,184,186,1);
-		letter-spacing: 1px;
-	}
-	#INTERACTIVE_SURVEY {
-		position: absolute;
-		left: 0px;
-		top: 182px;
-		overflow: visible;
-		width: 801px;
-		height: 28px;
-		text-align: center;
-		font-family: Nexa;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 22px;
-		color: rgba(182,184,186,1);
-		letter-spacing: 1px;
 	}
 	#Navigation_Bar {
 		position: absolute;
@@ -155,6 +127,74 @@
 		color: rgba(103,104,107,1);
 		letter-spacing: 0.5px;
 	}
+	#Group_12 {
+		position: absolute;
+		width: 590px;
+		height: 68px;
+		left: 345px;
+		top: 246px;
+		overflow: visible;
+	}
+	#YOU_WILL_BE_ASKED_DETAILS_WITH {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 591px;
+		height: 24px;
+		text-align: center;
+		font-family: Nexa;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(103,104,107,1);
+		letter-spacing: 0.5px;
+	}
+	#GENDER {
+		position: absolute;
+		left: 0px;
+		top: 44px;
+		overflow: visible;
+		width: 187px;
+		height: 24px;
+		text-align: center;
+		font-family: Nexa;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(103,104,107,1);
+		letter-spacing: 0.5px;
+	}
+	#AGE {
+		position: absolute;
+		left: 202px;
+		top: 44px;
+		overflow: visible;
+		width: 187px;
+		height: 24px;
+		text-align: center;
+		font-family: Nexa;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(103,104,107,1);
+		letter-spacing: 0.5px;
+	}
+	#CITY {
+		position: absolute;
+		left: 404px;
+		top: 44px;
+		overflow: visible;
+		width: 187px;
+		height: 24px;
+		text-align: center;
+		font-family: Nexa;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(103,104,107,1);
+		letter-spacing: 0.5px;
+	}
 	#Main_Button {
 		position: absolute;
 		width: 500px;
@@ -162,13 +202,17 @@
 		left: 390px;
 		top: 400px;
 		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: gender.html;
+		cursor: pointer;
 	}
-	#CLICK_TO_PARTICIPATE {
+	#CLICK_TO_SUBMIT_INFORMATION {
 		position: absolute;
-		left: 161px;
+		left: 125px;
 		top: 170px;
 		overflow: visible;
-		width: 179px;
+		width: 251px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Nexa;
@@ -178,17 +222,13 @@
 		color: rgba(182,184,186,1);
 		letter-spacing: 0.5px;
 	}
-	#Main_Button_xr {
+	#Main_Button_we {
 		position: absolute;
 		width: 500px;
 		height: 150px;
 		left: 0px;
 		top: 0px;
 		overflow: visible;
-		--web-animation: fadein 0.3s ease-out;
-		--web-action-type: page;
-		--web-action-target: about.html;
-		cursor: pointer;
 	}
 	.Rectangle_2 {
 		filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.161));
@@ -199,7 +239,7 @@
 		left: 0px;
 		top: 0px;
 	}
-	#_SendDUNES {
+	#_AboutYOU {
 		position: absolute;
 		left: 40px;
 		top: 47px;
@@ -2639,16 +2679,8 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="index">
-	<div id="Group_10">
-		<img id="ID20200413_DUNES_Final_Logo_01" src="ID20200413_DUNES_Final_Logo_01.png" srcset="ID20200413_DUNES_Final_Logo_01.png 1x, ID20200413_DUNES_Final_Logo_01@2x.png 2x">
-		<div id="DYNAMIC_URBAN_NODES_EMOTION_SI">
-			<span>DYNAMIC URBAN NODES EMOTION SIMULATOR</span>
-		</div>
-		<div id="INTERACTIVE_SURVEY">
-			<span>INTERACTIVE SURVEY</span>
-		</div>
-	</div>
+<div id="about">
+	<img id="ID20200413_DUNES_Final_Logo_01" src="ID20200413_DUNES_Final_Logo_01.png" srcset="ID20200413_DUNES_Final_Logo_01.png 1x, ID20200413_DUNES_Final_Logo_01@2x.png 2x">
 	<div id="Navigation_Bar" class="Navigation_Bar">
 		<svg class="Rectangle_3">
 			<rect fill="rgba(230,235,236,1)" id="Rectangle_3" rx="15" ry="15" x="0" y="0" width="590" height="30">
@@ -2664,17 +2696,31 @@ window.application = new Application();
 			<span>Contact</span>
 		</div>
 	</div>
-	<div id="Main_Button" class="Main_Button">
-		<div id="CLICK_TO_PARTICIPATE">
-			<span>CLICK TO PARTICIPATE</span>
+	<div id="Group_12">
+		<div id="YOU_WILL_BE_ASKED_DETAILS_WITH">
+			<span>YOU WILL BE ASKED DETAILS WITH REGARDS TO :</span>
 		</div>
-		<div onclick="application.goToTargetView(event)" id="Main_Button_xr">
+		<div id="GENDER">
+			<span>GENDER</span>
+		</div>
+		<div id="AGE">
+			<span>AGE</span>
+		</div>
+		<div id="CITY">
+			<span>CITY</span>
+		</div>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Main_Button" class="Main_Button">
+		<div id="CLICK_TO_SUBMIT_INFORMATION">
+			<span>CLICK TO SUBMIT INFORMATION</span>
+		</div>
+		<div id="Main_Button_we">
 			<svg class="Rectangle_2">
 				<rect fill="rgba(67,83,164,1)" id="Rectangle_2" rx="75" ry="75" x="0" y="0" width="500" height="150">
 				</rect>
 			</svg>
-			<div id="_SendDUNES">
-				<span>#SendDUNES</span>
+			<div id="_AboutYOU">
+				<span>#AboutYOU</span>
 			</div>
 		</div>
 	</div>
